@@ -5,7 +5,7 @@ import { Home } from "components/movies/Home";
 
 export const router = createBrowserRouter([
     {
-        path: '/react-homework-template',
+        path: '/',
         element: <App />,
         children: [
             {
@@ -13,7 +13,7 @@ export const router = createBrowserRouter([
                 element: <Home />
             },
             {
-                path: '/react-homework-template/movies',
+                path: '/movies',
                 element: <Movies />
             }
         ]

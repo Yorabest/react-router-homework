@@ -4,12 +4,12 @@ export const Navigation = () => {
     return <nav>
         <ul>
             <li>
-                <NavLink to='/react-homework-template'>
+                <NavLink to='/'>
                     Home 
                 </NavLink>
             </li>
             <li>
-                <NavLink to='/react-homework-template/movies'>
+                <NavLink to='/movies'>
                     Movies
                 </NavLink>
             </li>
