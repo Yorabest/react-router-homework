@@ -1,4 +1,4 @@
-import { Navigation } from "./movies/Navigation";
+import { Navigation } from "./Navigation";
 import { Outlet } from 'react-router-dom';
 
 export const App = () => {
