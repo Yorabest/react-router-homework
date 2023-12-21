@@ -54,3 +54,16 @@ export const fetchReviews = async ({params}) => {
         
     }
 }
+
+export const searchMovies = async ({params}) => {
+    try {
+        const data = await axios.get(`https://api.themoviedb.org/3/search/movie?api_key=098c0a06f6f788991ea9bd1b1a28f1b9&language=en-US&page=1&query=${params.query}`)
+        const parsedData = await data.data;
+        const results = await parsedData.results
+        console.log(results);
+        return await results
+    } catch (error) {
+        console.log(error);
+        
+    }
+}

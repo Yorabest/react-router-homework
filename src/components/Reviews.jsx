@@ -6,7 +6,7 @@ export const Reviews = () => {
         {reviews.map((review) => {
             return <li key={review.id}>
                 <p>{review.author}</p>
-                {/* <p>{JSON.parse(review.content)}</p> */}
+                <p>{review.content}</p>
             </li>
         })}
     </ul>

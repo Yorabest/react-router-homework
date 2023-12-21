@@ -1,4 +1,5 @@
 import { useLoaderData } from "react-router-dom"
+import { Poster } from "styled/Movie.styled"
 
 export const Cast = () => {
     const cast = useLoaderData()
@@ -6,7 +7,7 @@ export const Cast = () => {
     return <ul>
         {cast.map((actor) => {
             return <li key={actor.id}>
-                <img src={`https://image.tmdb.org/t/p/original/${actor.profile_path}`} alt={actor.name} width={100}/>
+                <Poster src={`https://image.tmdb.org/t/p/original/${actor.profile_path}`} alt={actor.name} width={100}/>
                 <p>{actor.name}</p>
                 <p>Character: {actor.character}</p>
             </li>
