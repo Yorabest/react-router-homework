@@ -9,6 +9,7 @@ gap: 20px;
 `
 
 export const Button = styled(NavLink)`
+
 padding: 5px;
 border: 2px solid black;
 border-radius: 20px;
